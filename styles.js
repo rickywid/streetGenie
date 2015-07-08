@@ -14,7 +14,7 @@ $(document).ready(function(){
 			
 
 			var x = Math.random();
-			if(x > 0 && x < 0.1){
+			if(x >= 0 && x < 0.1){
 				$(this).before("<h1 class='answer'>NO DOUBT ABOUT IT</h1>");
 			}else if(x > 0.1 && x < 0.2){
 				$(this).before("<h1 class='answer'>I DON'T ANSWER STUPID QUESTIONS</h1>");		
@@ -33,7 +33,7 @@ $(document).ready(function(){
 			}else if(x > 0.9 && x < 1){
 				$(this).before('<h1 class="answer">YES. I AM 100% SURE</h1>');		
 			}
-
+			
 			$('.ask-again').delay(2000).fadeIn();
 
 		});
