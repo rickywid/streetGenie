@@ -544,8 +544,6 @@ footer{
   width: 100%;
 }
 
-.copyright {
-  padding: 20px 40px 20px 20px;
-  font-weight: bolder;
-  color: white;
+.disclaimer {
+  padding: 20px;
 }
