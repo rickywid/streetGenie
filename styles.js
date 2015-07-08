@@ -21,7 +21,7 @@ $(document).ready(function(){
 				$(this).parent().parent().find('.error').html('THIS IS GOING TO BE A LONG DAY');		
 			}else if(err > 0.7 && err < 0.8){
 				$(this).parent().parent().find('.error').html('IS TIME TO GO HOME YET?');		
-			}else if(err > 0.9 && err < 1){
+			}else{
 				$(this).parent().parent().find('.error').html('HMMMM...');		
 			}
 
@@ -52,7 +52,7 @@ $(document).ready(function(){
 				$(this).before('<h1 class="answer">DO I REALLY NEED TO ANSWER THAT?</h1>');		
 			}else if(x > 0.7 && x < 0.8){
 				$(this).before('<h1 class="answer">NEGATIVE</h1>');		
-			}else if(x > 0.9 && x < 1){
+			}else{
 				$(this).before('<h1 class="answer">YES. I AM 100% SURE</h1>');		
 			}
 			
