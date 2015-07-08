@@ -496,6 +496,7 @@ input {
   border: none;
   padding: 5px 10px;
   -webkit-transition: border 0.5s;
+  -moz-transition: border 0.5s;
 }
 
 .ask-again:hover{
