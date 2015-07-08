@@ -3,6 +3,28 @@ $(document).ready(function(){
 	$('.button').on('click', function() {
 
 		if($(this).prev().prev().val() === ""){
+			var err = Math.random();
+		
+			if(err >= 0 && err < 0.1){
+				$(this).parent().parent().find('.error').html("I CANNOT READ YOUR MIND. PLEASE ENTER A QUESTION");
+			}else if(err > 0.1 && err < 0.2){
+				$(this).parent().parent().find('.error').html("DID YOU FORGET TO DO SOMETHING?");		
+			}else if(err > 0.2 && err < 0.3){
+				$(this).parent().parent().find('.error').html("DO YOU NOT UNDERSTAND HOW THIS WORKS?");		
+			}else if(err > 0.3 && err < 0.4){
+				$(this).parent().parent().find('.error').html("SHOULD I ASK A QUESTION FOR YOU?");		
+			}else if(err > 0.4 && err < 0.5){
+				$(this).parent().parent().find('.error').html("ARE YOU CONFUSED?");		
+			}else if(err > 0.5 && err < 0.6){
+				$(this).parent().parent().find('.error').html('IM GETTING A HEADACHE');		
+			}else if(err > 0.6 && err < 0.7){
+				$(this).parent().parent().find('.error').html('THIS IS GOING TO BE A LONG DAY');		
+			}else if(err > 0.7 && err < 0.8){
+				$(this).parent().parent().find('.error').html('IS TIME TO GO HOME YET?');		
+			}else if(err > 0.9 && err < 1){
+				$(this).parent().parent().find('.error').html('HMMMM...');		
+			}
+
 			$('.error').show();
 		}else{
 
