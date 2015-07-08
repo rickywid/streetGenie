@@ -483,6 +483,11 @@ input {
 .ask-again{
   display: none;
   cursor: pointer;
+  color: white;
+}
+
+.ask-again:hover{
+  color: #ccc;
 }
 
 #truth{
@@ -496,4 +501,19 @@ input {
 
 .button {
   cursor: pointer;
+  color: white;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.error {
+  display: none;
+}
+
+footer{
+  bottom: 0;
+  position: fixed;
 }

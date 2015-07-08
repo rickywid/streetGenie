@@ -3,9 +3,10 @@ $(document).ready(function(){
 	$('.button').on('click', function() {
 
 		if($(this).prev().prev().val() === ""){
-			$(this).append("<br><br>i cannot answer if there is no question");
+			$('.error').show();
 		}else{
 
+		$('.error').hide();
 		$('.content').fadeOut(300);
 		$('.thinking').delay(2000).fadeIn();
 		$('.thinking').addClass('animated fadeIn').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
