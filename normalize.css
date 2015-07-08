@@ -10,6 +10,11 @@ html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /**
@@ -18,7 +23,6 @@ html {
 
 body {
   margin: 0;
-  background-color: black;
   color: white;
   font-family: Playfair;
 }
@@ -467,6 +471,7 @@ input {
   border-left: none;
   outline: none;
   font-size: 30px;
+  font-weight: bolder;
   margin-bottom: 40px;
   color: #95C37A;
 
@@ -482,12 +487,17 @@ input {
 
 .ask-again{
   display: none;
+  font-weight: bolder;
   cursor: pointer;
   color: white;
+  border: none;
+  padding: 5px 10px;
+  -webkit-transition: border 0.5s;
 }
 
 .ask-again:hover{
-  color: #ccc;
+  cursor: pointer;
+  border: 5px solid white;
 }
 
 #truth{
@@ -495,25 +505,43 @@ input {
 }
 
 .answer {
-  color: #95C37A;
+  color: #82FA9B;
   font-size: 40px;
+  font-weight: bolder;
 }
 
 .button {
   cursor: pointer;
   color: white;
+  font-weight: bolder;
+  border: none;
+  padding: 5px 10px;
+  -webkit-transition: border 0.5s;
 }
 
 .button:hover {
   cursor: pointer;
-  color: #ccc;
+  border: 5px solid white;
 }
 
 .error {
   display: none;
+  color: rgba(106, 152, 93, 1);
 }
 
 footer{
   bottom: 0;
   position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.copyright {
+  padding: 20px 40px 20px 20px;
+  font-weight: bolder;
+  color: white;
+}
+
+nav {
+background-color:rgba(106, 152, 93, 0.5);
 }
