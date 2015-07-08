@@ -20,6 +20,7 @@ body {
   margin: 0;
   background-color: black;
   color: white;
+  font-family: Playfair;
 }
 
 /* HTML5 display definitions
@@ -467,17 +468,10 @@ input {
   outline: none;
   font-size: 30px;
   margin-bottom: 40px;
+  color: #95C37A;
+
 }
 
-.button {
-  font-family: Playfair;
-  color: #95C37A;
-  -webkit-transition: color 0.5s;
-}
-.button:hover {
-  cursor: pointer;
-  color: #69F742;
-}
 
 .thinking {
   display: none;
@@ -491,10 +485,15 @@ input {
   cursor: pointer;
 }
 
-.title{
-  font-family: Playfair;
-}
-
 #truth{
   border-bottom: 3px solid white;
+}
+
+.answer {
+  color: #95C37A;
+  font-size: 40px;
+}
+
+.button {
+  cursor: pointer;
 }

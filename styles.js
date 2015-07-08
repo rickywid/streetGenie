@@ -24,7 +24,7 @@ $(document).ready(function(){
 			}else if(x > 0.4 && x < 0.5){
 				$(this).before("<h1 class='answer'>I HAVE A HANGOVER. ASK AGAIN LATER ON</h1>");		
 			}else if(x > 0.5 && x < 0.6){
-				$(this).before('<h1 class="answer">IT SURE SEEMS LIKE, DONT YOU THINK?</h1>');		
+				$(this).before('<h1 class="answer">IT SURE SEEMS LIKE IT, DONT YOU THINK?</h1>');		
 			}else if(x > 0.6 && x < 0.7){
 				$(this).before('<h1 class="answer">DO I REALLY NEED TO ANSWER THAT?</h1>');		
 			}else if(x > 0.7 && x < 0.8){
